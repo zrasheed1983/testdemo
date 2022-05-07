@@ -38,12 +38,32 @@
         thead th {
             background-color: #F0F8FF !important;
         }
+        
+        .scrollbar::-webkit-scrollbar {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .scrollbar::-webkit-scrollbar-track {
+            border-radius: 100vh;
+            background: #E6EDF3;
+        }
+        
+        .scrollbar::-webkit-scrollbar-thumb {
+            background: #CED8E1;
+            border-radius: 100vh;
+            border: 3px solid #E6EDF3;
+        }
+        
+        .scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #B9C5CF;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="relative overflow-x-auto overflow-y-auto shadow-md sm:rounded-lg viewport-height">
+    <div class="relative overflow-x-auto overflow-y-auto shadow-md sm:rounded-lg viewport-height scrollbar">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-black sticky top-0 z-40">
                 <tr>
