@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Vryno</title>
+
+    <style>
+        body {
+            margin: 3% !important;
+            background: linear-gradient(112.6deg, #f2f7fa, #edf5f8 66.67%, #bed8e6) fixed;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .userimage {
+            object-fit: cover;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .viewport-height {
+            height: 60vh;
+        }
+        
+        thead {
+            background-color: #F0F8FF !important;
+        }
+        
+        thead th {
+            background-color: #F0F8FF !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="relative overflow-x-auto overflow-y-auto shadow-md sm:rounded-lg viewport-height">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-black sticky top-0 z-40">
+                <tr>
+                    <th scope="col" class="p-4">
+                        <div class="flex items-center">
+                            <input id="checkbox-all" type="checkbox" class="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500">
+                            <label for="checkbox-all" class="sr-only">checkbox</label>
+                        </div>
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Display Image
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Title
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        First Name
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Last Name
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Email
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Phone Number
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Job Title
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Designation
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Skype
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Twitter
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Date of Birth
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Organization
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Owner
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Industry
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Lead Source
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Relationship Type
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Billing Address
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Billing City
+                    </th>
+                    <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                        Billing Zip Code
+                    </th>
+                    <th scope="col" class="px-6 py-3 sticky right-0">
+                        &nbsp;
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b hover:bg-gray-50">
+                    <td class="w-4 p-4">
+                        <div class="flex items-center">
+                            <input id="checkbox-table-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500">
+                            <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                        </div>
+                    </td>
+                    <td class="px-6 py-0 text-center">
+                        <img src="images/4.jpg" class="userimage" alt="">
+                    </td>
+                    <td class="px-6 py-0">
+                        Mr
+                    </td>
+                    <td class="px-6 py-0">
+                        Brandon
+                    </td>
+                    <td class="px-6 py-0">
+                        Gilbert
+                    </td>
+                    <td class="px-6 py-0">
+                        stevencompton@example.net
+                    </td>
+                    <td class="px-6 py-0">
+                        001-038-29
+                    </td>
+                    <td class="px-6 py-0">
+                        Software Engineer
+                    </td>
+                    <td class="px-6 py-0">
+                        gilber.1
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Akshay Thakur
+                    </td>
+                    <td class="px-6 py-0">
+                        Call Center
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Other
+                    </td>
+                    <td class="px-6 py-0">
+                        36154 Mitchell Summit Wagnertown, CO 31395
+                    </td>
+                    <td class="px-6 py-0">
+                        47301
+                    </td>
+                    <td class="px-6 py-0 text-right sticky right-0 bg-white">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b hover:bg-gray-50">
+                    <td class="w-4 p-4">
+                        <div class="flex items-center">
+                            <input id="checkbox-table-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500">
+                            <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                        </div>
+                    </td>
+                    <td class="px-6 py-0 text-center">
+                        <img src="images/4.jpg" class="userimage" alt="">
+                    </td>
+                    <td class="px-6 py-0">
+                        Mr
+                    </td>
+                    <td class="px-6 py-0">
+                        Brandon
+                    </td>
+                    <td class="px-6 py-0">
+                        Gilbert
+                    </td>
+                    <td class="px-6 py-0">
+                        stevencompton@example.net
+                    </td>
+                    <td class="px-6 py-0">
+                        001-038-29
+                    </td>
+                    <td class="px-6 py-0">
+                        Software Engineer
+                    </td>
+                    <td class="px-6 py-0">
+                        gilber.1
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Akshay Thakur
+                    </td>
+                    <td class="px-6 py-0">
+                        Call Center
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Other
+                    </td>
+                    <td class="px-6 py-0">
+                        36154 Mitchell Summit Wagnertown, CO 31395
+                    </td>
+                    <td class="px-6 py-0">
+                        47301
+                    </td>
+                    <td class="px-6 py-0 text-right sticky right-0 bg-white">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b hover:bg-gray-50">
+                    <td class="w-4 p-4">
+                        <div class="flex items-center">
+                            <input id="checkbox-table-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500">
+                            <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                        </div>
+                    </td>
+                    <td class="px-6 py-0 text-center">
+                        <img src="images/4.jpg" class="userimage" alt="">
+                    </td>
+                    <td class="px-6 py-0">
+                        Mr
+                    </td>
+                    <td class="px-6 py-0">
+                        Brandon
+                    </td>
+                    <td class="px-6 py-0">
+                        Gilbert
+                    </td>
+                    <td class="px-6 py-0">
+                        stevencompton@example.net
+                    </td>
+                    <td class="px-6 py-0">
+                        001-038-29
+                    </td>
+                    <td class="px-6 py-0">
+                        Software Engineer
+                    </td>
+                    <td class="px-6 py-0">
+                        gilber.1
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Akshay Thakur
+                    </td>
+                    <td class="px-6 py-0">
+                        Call Center
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Other
+                    </td>
+                    <td class="px-6 py-0">
+                        36154 Mitchell Summit Wagnertown, CO 31395
+                    </td>
+                    <td class="px-6 py-0">
+                        47301
+                    </td>
+                    <td class="px-6 py-0 text-right sticky right-0 bg-white">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b hover:bg-gray-50">
+                    <td class="w-4 p-4">
+                        <div class="flex items-center">
+                            <input id="checkbox-table-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500">
+                            <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                        </div>
+                    </td>
+                    <td class="px-6 py-0 text-center">
+                        <img src="images/4.jpg" class="userimage" alt="">
+                    </td>
+                    <td class="px-6 py-0">
+                        Mr
+                    </td>
+                    <td class="px-6 py-0">
+                        Brandon
+                    </td>
+                    <td class="px-6 py-0">
+                        Gilbert
+                    </td>
+                    <td class="px-6 py-0">
+                        stevencompton@example.net
+                    </td>
+                    <td class="px-6 py-0">
+                        001-038-29
+                    </td>
+                    <td class="px-6 py-0">
+                        Software Engineer
+                    </td>
+                    <td class="px-6 py-0">
+                        gilber.1
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Akshay Thakur
+                    </td>
+                    <td class="px-6 py-0">
+                        Call Center
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Other
+                    </td>
+                    <td class="px-6 py-0">
+                        36154 Mitchell Summit Wagnertown, CO 31395
+                    </td>
+                    <td class="px-6 py-0">
+                        47301
+                    </td>
+                    <td class="px-6 py-0 text-right sticky right-0 bg-white">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b hover:bg-gray-50">
+                    <td class="w-4 p-4">
+                        <div class="flex items-center">
+                            <input id="checkbox-table-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500">
+                            <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                        </div>
+                    </td>
+                    <td class="px-6 py-0 text-center">
+                        <img src="images/4.jpg" class="userimage" alt="">
+                    </td>
+                    <td class="px-6 py-0">
+                        Mr
+                    </td>
+                    <td class="px-6 py-0">
+                        Brandon
+                    </td>
+                    <td class="px-6 py-0">
+                        Gilbert
+                    </td>
+                    <td class="px-6 py-0">
+                        stevencompton@example.net
+                    </td>
+                    <td class="px-6 py-0">
+                        001-038-29
+                    </td>
+                    <td class="px-6 py-0">
+                        Software Engineer
+                    </td>
+                    <td class="px-6 py-0">
+                        gilber.1
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Akshay Thakur
+                    </td>
+                    <td class="px-6 py-0">
+                        Call Center
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Other
+                    </td>
+                    <td class="px-6 py-0">
+                        36154 Mitchell Summit Wagnertown, CO 31395
+                    </td>
+                    <td class="px-6 py-0">
+                        47301
+                    </td>
+                    <td class="px-6 py-0 text-right sticky right-0 bg-white">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b hover:bg-gray-50">
+                    <td class="w-4 p-4">
+                        <div class="flex items-center">
+                            <input id="checkbox-table-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500">
+                            <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                        </div>
+                    </td>
+                    <td class="px-6 py-0 text-center">
+                        <img src="images/4.jpg" class="userimage" alt="">
+                    </td>
+                    <td class="px-6 py-0">
+                        Mr
+                    </td>
+                    <td class="px-6 py-0">
+                        Brandon
+                    </td>
+                    <td class="px-6 py-0">
+                        Gilbert
+                    </td>
+                    <td class="px-6 py-0">
+                        stevencompton@example.net
+                    </td>
+                    <td class="px-6 py-0">
+                        001-038-29
+                    </td>
+                    <td class="px-6 py-0">
+                        Software Engineer
+                    </td>
+                    <td class="px-6 py-0">
+                        gilber.1
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Akshay Thakur
+                    </td>
+                    <td class="px-6 py-0">
+                        Call Center
+                    </td>
+                    <td class="px-6 py-0">
+                        -
+                    </td>
+                    <td class="px-6 py-0">
+                        Other
+                    </td>
+                    <td class="px-6 py-0">
+                        36154 Mitchell Summit Wagnertown, CO 31395
+                    </td>
+                    <td class="px-6 py-0">
+                        47301
+                    </td>
+                    <td class="px-6 py-0 text-right sticky right-0 bg-white">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
