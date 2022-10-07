@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vryno</title>
+
+    <style>
+        body {
+            margin: 0 !important;
+            padding: 0;
+            background-image:url('images/page-bg.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: top;
+            font-family: 'Poppins', sans-serif;
+        }
+        .loader-overlay{
+            position: absolute;
+            width:100%;
+            height:100%;
+            background-color:rgba(0, 0, 0, 0.5);
+            z-index:998;
+        }
+
+        .loader {
+            position: absolute;
+            top:0;
+            display: flex;
+            width: 100%;
+            height: 5px;
+            z-index:999;
+        }
+
+        .loader::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg,
+                    #0080FE,
+                    #B2D9FF,
+                    #0080FE);
+            background-size: 500%;
+            animation: animate 10s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 500% 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader-overlay">
+        <div class="loader"></div>
+    </div>
+</body>
+
+</html>
