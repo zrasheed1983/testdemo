@@ -9,91 +9,58 @@
 
     <style>
         body {
-            margin:0 !important;
+            margin: 0 !important;
             padding: 0;
-            background: linear-gradient(112.6deg, #f2f7fa, #edf5f8 66.67%, #bed8e6) fixed;
+            background-image:url('images/page-bg.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: top;
             font-family: 'Poppins', sans-serif;
         }
-        
-        .report-loader-container{
+        .loader-overlay{
             position: absolute;
             width:100%;
             height:100%;
-            z-index: 999;
-            display:flex;
+            background-color:rgba(0, 0, 0, 0.5);
+            z-index:998;
         }
-        .report-loader{
-            display:flex;
-            align-items:center;
-            align-self:center;
-            justify-items: center;
-            width:100%;
-            flex-direction:column;
+
+        .loader {
+            position: absolute;
+            top:0;
+            display: flex;
+            width: 100%;
+            height: 5px;
+            z-index:999;
         }
-        .report-loader svg{
-            width:50px;
-            fill: #0080FE;
+
+        .loader::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg,
+                    #0080FE,
+                    #B2D9FF,
+                    #0080FE);
+            background-size: 500%;
+            animation: animate 10s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 500% 0;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="report-loader-container">
-        <div class="report-loader">
-            
-<svg width="50" height="51.85" viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" fill="#0080FE">
-    <rect y="10" width="15" height="120" rx="6">
-        <animate attributeName="height"
-             begin="0.5s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0.5s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
-    <rect x="30" y="10" width="15" height="120" rx="6">
-        <animate attributeName="height"
-             begin="0.25s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0.25s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
-    <rect x="60" width="15" height="140" rx="6">
-        <animate attributeName="height"
-             begin="0s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
-    <rect x="90" y="10" width="15" height="120" rx="6">
-        <animate attributeName="height"
-             begin="0.25s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0.25s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
-    <rect x="120" y="10" width="15" height="120" rx="6">
-        <animate attributeName="height"
-             begin="0.5s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0.5s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
-</svg>
-        </div>
+    <div class="loader-overlay">
+        <div class="loader"></div>
     </div>
 </body>
 
